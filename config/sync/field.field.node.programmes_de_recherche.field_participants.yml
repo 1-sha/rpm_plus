@@ -1,0 +1,21 @@
+uuid: 219eafbd-0c03-48d4-9bd5-d7130e37f9f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participants
+    - node.type.programmes_de_recherche
+  module:
+    - text
+id: node.programmes_de_recherche.field_participants
+field_name: field_participants
+entity_type: node
+bundle: programmes_de_recherche
+label: Participants
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

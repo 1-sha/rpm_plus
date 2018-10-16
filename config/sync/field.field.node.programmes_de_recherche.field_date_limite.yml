@@ -1,0 +1,21 @@
+uuid: 70214e1f-a4e6-4b4a-a6b2-a85f5fc06861
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_limite
+    - node.type.programmes_de_recherche
+  module:
+    - datetime
+id: node.programmes_de_recherche.field_date_limite
+field_name: field_date_limite
+entity_type: node
+bundle: programmes_de_recherche
+label: 'Date limite'
+description: 'Date limite d''inscription au programme'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
