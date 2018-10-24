@@ -1,4 +1,4 @@
-uuid: 331da57a-2510-4ee0-95e1-bb859b9c7b1a
+uuid: dcf338f7-4f62-4997-a401-5505cd5fa67a
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: conference_lite_account_menu
 theme: conference_lite
 region: sidebar_second
-weight: -6
+weight: -5
 provider: null
 plugin: 'system_menu_block:account'
 settings:

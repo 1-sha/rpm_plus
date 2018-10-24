@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+
+function program_manager_node_view(&$build, EntityInterface $entity,EntityViewDisplayInterface $display, $view_mode) {
+    if ($display->getTargetBundle() == 'programmes_de_recherche'){
+        
+        if (isset($entity->getFields()['field_range_joining'])) {
+
+          $joiningDates = $entity->getFields()['field_range_joining']->getValue();
+
+          $beginJoin = \DateTime::createFromFormat('Y-m-d h:i:s', $joiningDates[0]['value'].' 00:00:00');
+          $now = new \Datetime();
+          $endJoin = \Datetime::createFromFormat('Y-m-d h:i:s',$joiningDates[0]['end_value'].' 00:00:00')->modify('+1 day');
+
+          if ($now < $beginJoin || $endJoin < $now){ //if we're not in the joining period
+              unset($build['field_join_form']);
+          }
+        }
+    }
+}
+
+/**
+ * Implements hook_mail_alter().
+ */
+function program_manager_mail_alter(&$message) {
+  // Stop the default drupal email that goes out to admins when a user
+  // registers on the site. An alternative email is sent out via other means.
+
+  if ($message['key'] == 'register_pending_approval_admin') {
+    $message['send'] = FALSE;
+  }
+}

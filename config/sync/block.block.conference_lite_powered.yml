@@ -1,4 +1,4 @@
-uuid: dde5bd75-470d-4994-868c-91fde33c26cf
+uuid: 886bc2de-b4e5-4550-8a1e-a09adfc3efe7
 langcode: en
 status: true
 dependencies:
@@ -11,12 +11,12 @@ _core:
 id: conference_lite_powered
 theme: conference_lite
 region: sidebar_second
-weight: -5
+weight: -3
 provider: null
 plugin: system_powered_by_block
 settings:
   id: system_powered_by_block
-  label: 'Powered by Drupal'
+  label: 'Powered Drupal'
   provider: system
   label_display: '0'
 visibility: {  }

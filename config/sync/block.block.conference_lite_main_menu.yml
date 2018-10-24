@@ -1,4 +1,4 @@
-uuid: 622ed1d9-ee5d-4b1e-81a8-8d0cb8ab5b83
+uuid: a4839cd8-1728-478b-9518-1b3b2c2ac672
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: conference_lite_main_menu
 theme: conference_lite
 region: header
-weight: -5
+weight: -9
 provider: null
 plugin: 'system_menu_block:main'
 settings:

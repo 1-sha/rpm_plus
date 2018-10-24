@@ -2,7 +2,7 @@ breadcrumb_separator: fa-angle-right
 scroll_to_top_display: 1
 scroll_to_top_icon: fa-angle-double-up
 bootstrap_remote_type: cdn
-color_scheme: blue
+color_scheme: purple
 page_container_border: 0
 animations_state: false
 slideout_background_color: 'region--light-typography region--black-background'
@@ -205,3 +205,16 @@ isotope_filters_text: All
 google_maps_key: AIzaSyDyL-4KyWw_3hp-0jmZLGcJ3zMWkkJ44VI
 _core:
   default_config_hash: cFMPhNyFMCFjGTo1NqT0-LCOml1L6vKxZQYkzelevWs
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://notes.png'
+favicon:
+  use_default: 0
+  path: 'public://logo1.png'
+  mimetype: image/png
+premium_description: ''
